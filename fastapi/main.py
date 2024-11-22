@@ -13,10 +13,10 @@ from fastapi import HTTPException, Depends, status
 from fastapi.security import OAuth2PasswordBearer
 
 
-
+#connexion à la database
 DATABASE_URL = "postgresql://postgres:password@db:5432/internships_db"
 
-
+# Créé un moteur SQLAlchemy pour la gestion de la connexion à la base de données.
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
