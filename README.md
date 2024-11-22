@@ -4,6 +4,7 @@
 Our **Internship Tracker** project is a full-stack application designed to manage internship applications. It allows users to register via an account creation, log in and manage their internship files while tracking the status of the applications. The project is containerized using Docker for easy deployment.
 
 
+
 <br>
 <br>
 <br>
