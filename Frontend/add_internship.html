@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Internship</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 700px;
+            margin-top: 60px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        .form-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .form-label {
+            font-weight: bold;
+            color: #495057;
+        }
+        .btn-back {
+            background-color: #6c757d;
+            color: white;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            padding: 10px 20px;
+        }
+        .btn-back:hover {
+            background-color: #5a6268;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            padding: 10px 20px;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+        .card {
+            border: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Add New Internship</h1>
+        <form method="POST" action="/add_internship/">
+            <!-- Title -->
+            <div class="mb-4">
+                <label for="title" class="form-label">Title:</label>
+                <input type="text" id="title" name="title" class="form-control" placeholder="e.g., Software Engineer Intern" required>
+            </div>
+
+            <!-- Company Name -->
+            <div class="mb-4">
+                <label for="company_name" class="form-label">Company Name:</label>
+                <input type="text" id="company_name" name="company_name" class="form-control" placeholder="e.g., Google, Inc." required>
+            </div>
+
+            <!-- Start Date -->
+            <div class="mb-4">
+                <label for="start_date" class="form-label">Start Date:</label>
+                <input type="date" id="start_date" name="start_date" class="form-control" required>
+            </div>
+
+            <!-- End Date -->
+            <div class="mb-4">
+                <label for="end_date" class="form-label">End Date:</label>
+                <input type="date" id="end_date" name="end_date" class="form-control">
+            </div>
+
+            <!-- Application Link -->
+            <div class="mb-4">
+                <label for="application_link" class="form-label">Application Link:</label>
+                <input type="url" id="application_link" name="application_link" class="form-control" placeholder="e.g., https://company.com/apply" required>
+            </div>
+
+            <!-- Status -->
+            <div class="mb-4">
+                <label for="status" class="form-label">Status:</label>
+                <select id="status" name="status" class="form-select" required>
+                    <option value="Pending">Pending</option>
+                    <option value="Accepted">Accepted</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between mt-4">
+                <a href="/dashboard" class="btn btn-back">Back to Dashboard</a>
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
