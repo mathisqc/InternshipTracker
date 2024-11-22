@@ -330,4 +330,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 Developed by **bysocode** and **mathisqc**.
 
-GitHub Repository: [https://github.com/bysocode/InternshipTracker](https://github.com/bysocode/InternshipTracker)
+GitHub Repository: [https://github.com/mathisqc/InternshipTracker](https://github.com/bysocode/InternshipTracker)
