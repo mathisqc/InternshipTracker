@@ -328,6 +328,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-Developed by **bysocode** and **mathisqc**.
+Developed by **bysocode** (Julien-Aymar PHILEMY, E5AIC) and **mathisqc** (Mathis QUINIO-COSQUER, E5DSIA).
 
 GitHub Repository: [https://github.com/mathisqc/InternshipTracker](https://github.com/bysocode/InternshipTracker)
